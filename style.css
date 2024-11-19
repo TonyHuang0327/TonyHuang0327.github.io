@@ -8725,4 +8725,30 @@
       border-radius: 4px;
     }
   }
-  
+  .project:hover {
+    background-color: #FFD43B;
+  }
+
+  .project i {
+    font-size: 24px;
+    transition: all 0.3s ease;
+    display: none; /* 預設隱藏 */
+  }
+
+  .project:hover i {
+    display: block; /* hover 時顯示 icon */
+  }
+
+  .project span {
+    display: block; /* 預設顯示文字 */
+    transition: all 0.3s ease;
+  }
+
+  .project:hover span {
+    display: none; /* hover 時隱藏文字 */
+  }
+  .icon-container {
+    display: flex; /* 使用 flexbox，讓 icon 水平排列 */
+    gap: 5px; /* Icon 之間的距離 */
+    justify-content: center;
+  }
